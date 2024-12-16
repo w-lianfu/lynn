@@ -46,15 +46,18 @@ export default tseslint.config(
       // eslint 配置参考: https://github.com/airbnb/javascript
       // ------ eslint rules ------
       'no-empty-function': 'off',
+      // https://eslint.org/docs/latest/rules/no-new-object
       'no-new-object': 'error',
+      // https://eslint.org/docs/latest/rules/object-shorthand
       'object-shorthand': ['error', 'always'],
+      // https://eslint.org/docs/latest/rules/quote-props
       'quote-props': ['error', 'as-needed'],
       // https://github.com/airbnb/javascript?tab=readme-ov-file#arrays--callback-return
       'array-callback-return': 'error',
       // https://github.com/airbnb/javascript?tab=readme-ov-file#destructuring--object
       'prefer-destructuring': 'error',
       // https://github.com/airbnb/javascript?tab=readme-ov-file#strings--quotes
-      'quotes': ['error', 'single'],
+      quotes: ['error', 'single'],
       // https://eslint.org/docs/latest/rules/func-style
       'func-style': ['error', 'expression'],
       // https://eslint.org/docs/latest/rules/wrap-iife
@@ -63,11 +66,12 @@ export default tseslint.config(
       'no-loop-func': 'error',
       // https://github.com/airbnb/javascript?tab=readme-ov-file#functions--signature-spacing
       'space-before-function-paren': ['error', 'never'],
+      // https://eslint.org/docs/latest/rules/space-before-blocks
       'space-before-blocks': ['error', 'always'],
       // https://github.com/airbnb/javascript?tab=readme-ov-file#arrows--use-them
       'prefer-arrow-callback': 'error',
       // https://eslint.org/docs/latest/rules/arrow-spacing
-      'arrow-spacing': ['error', { 'before': true, 'after': true }],
+      'arrow-spacing': ['error', { before: true, after: true }],
       // https://eslint.org/docs/latest/rules/arrow-parens
       'arrow-parens': ['error', 'as-needed'],
       // https://eslint.org/docs/latest/rules/arrow-body-style
@@ -76,6 +80,7 @@ export default tseslint.config(
       'no-duplicate-imports': 'error',
       // https://eslint.org/docs/latest/rules/no-restricted-syntax
       'no-restricted-syntax': ['error', 'FunctionExpression'],
+      // https://eslint.org/docs/latest/rules/semi
       semi: ['error', 'always'],
       // https://eslint.org/docs/latest/rules/indent
       indent: ['error', 2],
@@ -94,9 +99,9 @@ export default tseslint.config(
       // https://github.com/airbnb/javascript?tab=readme-ov-file#blocks--no-else-return
       'no-else-return': 'error',
       // https://github.com/airbnb/javascript?tab=readme-ov-file#comments--spaces
-      'spaced-comment': ['error', 'always', { 'markers': ['/'] }],
+      'spaced-comment': ['error', 'always', { markers: ['/'] }],
       // https://eslint.org/docs/latest/rules/arrow-spacing
-      'arrow-spacing': ['error', { 'before': true, 'after': true }],
+      'arrow-spacing': ['error', { before: true, after: true }],
       // https://eslint.org/docs/latest/rules/implicit-arrow-linebreak
       'implicit-arrow-linebreak': ['error', 'beside'],
       // https://eslint.org/docs/latest/rules/no-multiple-empty-lines
@@ -112,11 +117,11 @@ export default tseslint.config(
       // https://eslint.org/docs/latest/rules/block-spacing
       'block-spacing': 'error',
       // https://eslint.org/docs/latest/rules/comma-spacing
-      'comma-spacing': ['error', { 'before': false, 'after': true }],
+      'comma-spacing': ['error', { before: false, after: true }],
       // https://eslint.org/docs/latest/rules/func-call-spacing
       'func-call-spacing': ['error', 'never'],
       // https://eslint.org/docs/latest/rules/key-spacing
-      'key-spacing': ['error', { 'beforeColon': false, 'afterColon': true }],
+      'key-spacing': ['error', { beforeColon: false, afterColon: true }],
       // https://eslint.org/docs/latest/rules/no-trailing-spaces
       'no-trailing-spaces': 'error',
       // https://eslint.org/docs/latest/rules/comma-style
