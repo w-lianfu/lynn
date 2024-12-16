@@ -1,0 +1,9 @@
+#+TITLE: lynn
+#+AUTHOR: h5lianfu
+#+EMAIL: h5lianfu@gmail.com
+#+DATE: 2024-12-15
+#+OPTIONS: bun, react, typescript, mui, sass.
+
+***Start development
+
++ `bun run dev`
