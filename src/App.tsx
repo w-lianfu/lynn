@@ -4,9 +4,9 @@ import './scss/index.scss';
 
 const App = () => {
   useEffect(() => {
+    // --- city ---
     const city = 'New York';
-    console.log('a -- ', city);
-
+    console.log('city -- ', city);
   }, []);
 
   return (

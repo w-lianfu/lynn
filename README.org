@@ -4,6 +4,6 @@
 #+DATE: 2024-12-15
 #+OPTIONS: bun, react, typescript, mui, sass.
 
-***Start development
+*** Start development
 
 + `bun run dev`
