@@ -1,11 +1,14 @@
 import { useEffect, ReactNode } from 'react';
 import { BrowserRouter } from 'react-router';
 import { observer } from 'mobx-react-lite';
-import { ThemeProvider } from '@mui/material/styles';
 
 import '@scss/index.scss';
-import Theme from '@theme/index';
+import AppTheme from './app-theme';
 import AppDial from './app-dial';
+import AppLock from './app-lock';
+import AppTop from '@comp/app-top/index';
+import AppStatus from '@comp/app-status/index';
+import lock from './store/app-lock';
 
 interface IProps {
   children: ReactNode,
@@ -14,6 +17,7 @@ interface IState {}
 
 const App = (props: IProps, state: IState) => {
   const { children } = props;
+  const { isLock } = lock;
 
   useEffect(() => {
     return () => {};
@@ -21,10 +25,13 @@ const App = (props: IProps, state: IState) => {
 
   return (
     <BrowserRouter>
-      <ThemeProvider theme={Theme}>
+      <AppTheme>
+        <AppTop />
+        <AppStatus />
         <>{children}</>
         <AppDial />
-      </ThemeProvider>
+        {isLock ? <AppLock /> : null}
+      </AppTheme>
     </BrowserRouter>
   );
 };
