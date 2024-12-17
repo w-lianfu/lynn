@@ -4,11 +4,15 @@ import { Paper, Stack, Box, Button, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
 import Color from '@tool/color';
+import Size from '@tool/size';
 
 interface IProps {}
 interface IState {}
 
-const DPaper = styled(Paper)({});
+const DPaper = styled(Paper)({
+  paddingTop: `${Size.appTop}rem`,
+  paddingBottom: `${Size.appStatus}rem`,
+});
 
 const DStack = styled(Stack)({});
 
@@ -23,7 +27,6 @@ const Dashboard = (props: IProps, state: IState) => {
 
   return (
     <DPaper>
-      <NavLink to="/home">To Home</NavLink>
       <Button variant="contained" color="primary">追求技术之巅，探索宇宙之秘...</Button>
       <Button variant="contained" color="secondary">诗为她而作，泪为你而流...</Button>
       <Button variant="contained" color="info">每天醒来为了什么</Button>
@@ -47,36 +50,6 @@ const Dashboard = (props: IProps, state: IState) => {
       <Button color="info">每天醒来为了什么</Button>
       <Button color="warning">伐木造船，驶向有你的彼岸...</Button>
       <Button color="error">行行走走忙忙匆匆挤挤</Button>
-      <Typography variant="h1">Dashboard Page</Typography>
-      <Typography variant="h1">Dashboard Page</Typography>
-      <Typography variant="h1">Dashboard Page</Typography>
-      <Typography variant="h1">Dashboard Page</Typography>
-      <Typography variant="h1">Dashboard Page</Typography>
-      <Typography variant="h1">Dashboard Page</Typography>
-      <Typography variant="h1">Dashboard Page</Typography>
-      <Typography variant="h1">Dashboard Page</Typography>
-      <Typography variant="h1">Dashboard Page</Typography>
-      <Typography variant="h1">Dashboard Page</Typography>
-      <Typography variant="h1">Dashboard Page</Typography>
-      <Typography variant="h1">Dashboard Page</Typography>
-      <Typography variant="h1">Dashboard Page</Typography>
-      <Typography variant="h1">Dashboard Page</Typography>
-      <Typography variant="h1">Dashboard Page</Typography>
-      <Typography variant="h1">Dashboard Page</Typography>
-      <Typography variant="h1">Dashboard Page</Typography>
-      <Typography variant="h1">Dashboard Page</Typography>
-      <Typography variant="h1">Dashboard Page</Typography>
-      <Typography variant="h1">Dashboard Page</Typography>
-      <Typography variant="h1">Dashboard Page</Typography>
-      <Typography variant="h1">Dashboard Page</Typography>
-      <Typography variant="h1">Dashboard Page</Typography>
-      <Typography variant="h1">Dashboard Page</Typography>
-      <Typography variant="h1">Dashboard Page</Typography>
-      <Typography variant="h1">Dashboard Page</Typography>
-      <Typography variant="h1">Dashboard Page</Typography>
-      <Typography variant="h1">Dashboard Page</Typography>
-      <Typography variant="h1">Dashboard Page</Typography>
-      <Typography variant="h1">End End End</Typography>
     </DPaper>
   );
 };
