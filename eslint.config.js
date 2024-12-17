@@ -6,7 +6,7 @@ import tseslint from 'typescript-eslint'
 import react from 'eslint-plugin-react';
 
 export default tseslint.config(
-  { ignores: ['dist'] },
+  { ignores: ['dist', 'vite.config.js'] },
   {
     extends: [
       js.configs.recommended,
@@ -41,10 +41,13 @@ export default tseslint.config(
       // ------ typescript-eslint rules ------
       '@typescript-eslint/no-empty-function': 'off',
       '@typescript-eslint/no-inferrable-types': 'off',
+      '@typescript-eslint/no-empty-object-type': 'off',
+      '@typescript-eslint/no-unused-vars': 'off',
       // '@typescript-eslint/no-explicit-any': 'off',
 
       // eslint 配置参考: https://github.com/airbnb/javascript
       // ------ eslint rules ------
+      'no-unused-vars': 'off',
       'no-empty-function': 'off',
       // https://eslint.org/docs/latest/rules/no-new-object
       'no-new-object': 'error',
