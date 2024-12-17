@@ -16,7 +16,7 @@ const DStack = styled(Stack)({});
 
 const DBox = styled(Box)({});
 
-const AppLoading = (props: IProps, state: IState) => {
+const AppLoading = (props: IProps) => {
   const navi = useNavigate();
 
   useEffect(() => {

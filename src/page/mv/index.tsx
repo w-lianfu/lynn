@@ -29,7 +29,7 @@ const DBox = styled(Box)({
 
 const DTypography = styled(Typography)({});
 
-const MV = (props: IProps, state: IState) => {
+const MV = (props: IProps) => {
   const mvWidth = '36rem';
   const mvHeight = '24rem';
 

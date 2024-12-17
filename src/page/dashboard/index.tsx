@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useNavigate, NavLink } from 'react-router';
+import { observer } from 'mobx-react-lite';
 import { Paper, Stack, Box, Button, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
@@ -18,7 +19,7 @@ const DStack = styled(Stack)({});
 
 const DBox = styled(Box)({});
 
-const Dashboard = (props: IProps, state: IState) => {
+const Dashboard = (props: IProps) => {
   const navi = useNavigate();
 
   useEffect(() => {
@@ -54,4 +55,4 @@ const Dashboard = (props: IProps, state: IState) => {
   );
 };
 
-export default Dashboard;
+export default observer(Dashboard);

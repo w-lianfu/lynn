@@ -24,7 +24,7 @@ const DBox = styled(Box)({
   backgroundColor: Color.black(0.9),
 });
 
-const AppLock = (props: IProps, state: IState) => {
+const AppLock = (props: IProps) => {
   useEffect(() => {
     return () => {};
   }, []);

@@ -1,10 +1,11 @@
 import { useEffect } from 'react';
+import { observer } from 'mobx-react-lite';
 import { useNavigate, NavLink } from 'react-router';
 
 interface IProps {}
 interface IState {}
 
-const Home = (props: IProps, state: IState) => {
+const Home = (props: IProps) => {
   const navi = useNavigate();
 
   useEffect(() => {
@@ -19,4 +20,4 @@ const Home = (props: IProps, state: IState) => {
   );
 };
 
-export default Home;
+export default observer(Home);

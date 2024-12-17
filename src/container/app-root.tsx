@@ -15,7 +15,7 @@ interface IProps {
 }
 interface IState {}
 
-const App = (props: IProps, state: IState) => {
+const App = (props: IProps) => {
   const { children } = props;
   const { isLock } = lock;
 

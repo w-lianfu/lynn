@@ -35,7 +35,7 @@ const actions = [
   { icon: <MdArrowUpward />, name: 'Top' },
 ];
 
-const AppDial = (props: IProps, state: IState) => {
+const AppDial = (props: IProps) => {
   const navi = useNavigate();
   const [isOpen, setOpen] = useState(false);
 

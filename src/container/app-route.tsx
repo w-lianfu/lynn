@@ -9,7 +9,7 @@ import MV from '@page/mv/index';
 interface IProps {}
 interface IState {}
 
-const AppRoute = (props: IProps, state: IState) => {
+const AppRoute = (props: IProps) => {
   useEffect(() => {
     return () => {};
   }, []);

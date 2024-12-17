@@ -24,7 +24,7 @@ const DBox = styled(Box)({
   backgroundColor: Color.black(1),
 });
 
-const AppTop = (props: IProps, state: IState) => {
+const AppTop = (props: IProps) => {
   useEffect(() => {
     return () => {};
   }, []);

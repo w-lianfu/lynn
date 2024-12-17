@@ -10,7 +10,7 @@ interface IState {}
 
 const DPaper = styled(Paper)({});
 
-const AppPortal = (props: IProps, state: IState) => {
+const AppPortal = (props: IProps) => {
   const { children }= props;
 
   useEffect(() => {

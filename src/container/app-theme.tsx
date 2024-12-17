@@ -8,7 +8,7 @@ interface IProps {
 }
 interface IState {}
 
-const AppTheme = (props: IProps, state: IState) => {
+const AppTheme = (props: IProps) => {
   const { children } = props;
 
   useEffect(() => {
