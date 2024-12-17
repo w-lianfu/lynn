@@ -1,4 +1,9 @@
 import { useEffect } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router';
+
+import '@scss/index.scss';
+import Dashboard from '@page/dashboard/index';
+import Home from '@page/home/index';
 
 interface IProps {}
 interface IState {}
@@ -9,7 +14,12 @@ const AppRoute = (props: IProps, state: IState) => {
   }, []);
 
   return (
-    <h1>Hello</h1>
+    <Routes>
+      <Route index element={<Dashboard />} />
+      <Route path="/" element={<Dashboard />} />
+      <Route path="/home" element={<Home />} />
+      <Route path="*" element={<Dashboard />} />
+    </Routes>
   );
 };
 

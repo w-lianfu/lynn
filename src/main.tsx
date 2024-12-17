@@ -1,10 +1,11 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
-import AppRoute from '@con/app-route.tsx';
+import AppRoot from '@con/app-root';
+import AppRoute from '@con/app-route';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <AppRoute />
+    <AppRoot><AppRoute /></AppRoot>
   </StrictMode>,
 );
